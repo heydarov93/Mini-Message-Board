@@ -1,7 +1,7 @@
 # Mini Message Board Application
 
 A very simple message board application built with **Node.js**, **Express**, and **EJS**. Users can view messages, submit new messages, and view individual message details.
-The application doesn't use any database, instead ```messages``` array is used to store all messages.
+The application doesn't use any database, instead an array is used inside [db.js](https://github.com/heydarov93/Mini-Message-Board/blob/main/db.js) file to store all messages.
 
 ---
 
