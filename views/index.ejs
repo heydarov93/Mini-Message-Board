@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <%- include("navbar") %>
+    <hr />
+    <h1><%= heading %></h1>
+
+    <div>
+      <% messages.forEach((message, i) => { %>
+      <div class="message-container">
+        <p><span>From: </span><%= message.user %></p>
+        <p><%= message.added %></p>
+        <p><%= message.text %></p>
+        <a href="/messages/<%=message.id%>">Open</a>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>

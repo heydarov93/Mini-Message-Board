@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <%- include("navbar") %>
+    <hr />
+    <form method="POST" action="/new">
+      <h3><%= heading %></h3>
+      <div>
+        <label for="name">Name</label>
+        <input
+          id="name"
+          name="username"
+          type="text"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div>
+        <label for="messageText">Text</label>
+        <input
+          id="messageText"
+          name="messageText"
+          type="text"
+          placeholder="Enter your message"
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
