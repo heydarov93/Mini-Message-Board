@@ -41,4 +41,4 @@ async function getMessageById(messageId) {
   return messages.find((message) => message.id === Number(messageId));
 }
 
-module.exports = { getAllMessages, addNewMessage, getMessageById };
+// module.exports = { getAllMessages, addNewMessage, getMessageById };

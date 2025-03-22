@@ -1,10 +1,11 @@
 const asyncHandler = require("express-async-handler");
-const { getAllMessages } = require("../db");
+const db = require("../db/queries");
 const { formatDate } = require("../utils/formatDate");
 // const CustomNotFoundError = require("../errors/CustomNotFoundError");
 
 const showHomePage = asyncHandler(async (req, res) => {
-  const messages = await getAllMessages();
+  const messages = await db.getAllMessages();
+  console.log(messages);
 
   const optimizedMessages = messages.map((message) => {
     const msg = { ...message, added: formatDate(message.added) };
