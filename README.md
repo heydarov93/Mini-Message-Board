@@ -1,19 +1,22 @@
 # Mini Message Board Application
 
 A very simple message board application built with **Node.js**, **Express**, and **EJS**. Users can view messages, submit new messages, and view individual message details.
-The application doesn't use any database, instead an array is used inside [db.js](https://github.com/heydarov93/Mini-Message-Board/blob/main/db.js) file to store all messages.
+
+Live: [Mini Message Board](https://mini-message-board-production-8e97.up.railway.app/)
 
 ---
 
-#### Note: Main goal of the project is to practice Controllers, Middlewares, Views and Routing with Express.js
+> [!NOTE]
+> Main goal of the project is to practice Controllers, Middlewares, Views and Routing with Express.js.
+
 
 ## Tech Stack
 
-| **Frontend** | **Backend** | **Templating Engine** | **Additional Libraries** |
-|--------------|-------------|------------------------|--------------------------|
-| HTML         | Node.js     | EJS                    | `express-async-handler`  |
-| CSS          | Express     |                        |                          |
-| JavaScript   |             |                        |                          |
+| **Frontend** | **Backend** | **Templating Engine**  | **Additional Libraries** | **DataBase** |
+|--------------|-------------|------------------------|--------------------------|--------------|
+| HTML         | Node.js     | EJS                    | `express-async-handler`  | PostgreSQL   |
+| CSS          | Express     |                        |                          |              |
+| JavaScript   |             |                        |                          |              |
 
 ---
 
@@ -32,17 +35,33 @@ The application doesn't use any database, instead an array is used inside [db.js
    ```bash
    git clone https://github.com/your-username/mini-message-board.git
    cd Mini-Message-Board
+   ```
 
 2. Install dependencies:
    ```bash
    npm install
+   ```
 
-3. Start the server:
+3. Create database in PostgreSQL
+
+4. Set following environment variables with related values:
+   ```
+   DB_HOST=localhost
+   DB_USER=username for database
+   DB_NAME=database name from step 3
+   DB_PASSW=password for username
+   DB_PORT=5432
+   ```
+
+5. Start the server:
    ```bash
    npm start
+   ```
 
-4. Open your browser and navigate to:
-   ```http://localhost:8000```
+6. Open your browser and navigate to:
+   ```
+   http://localhost:8000
+   ```
 
 ## Routes
 
